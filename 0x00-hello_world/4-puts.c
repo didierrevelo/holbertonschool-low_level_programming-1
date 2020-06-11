@@ -2,8 +2,8 @@
 /**
  * main - print with pats
  *
- * description: this function allows me to print a statement without using printf.
- * Return: Always 0 (Success)
+ * description: this function allows me to print a statement without using printf
+ * Return: Always 0 if the programming ran to completion
  */
 int main(void)
 {
