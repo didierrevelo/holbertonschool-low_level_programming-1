@@ -3,10 +3,10 @@
  * main - print with pats
  *
  * description: this function allows me to print a statement without using printf
- * Return: Always 0 if the programming ran to completion
+ * Return: Always 0 
  */
 int main(void)
 {
-  puts("\"Programming is like building a multilingual puzzle");
-  return (0);
+       puts("\"Programming is like building a multilingual puzzle");
+       return (0);
 }
