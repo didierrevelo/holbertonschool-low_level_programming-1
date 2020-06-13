@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  *main - entry point
  *
- *Return: returns 0 upon successfull run
+ *Return: Always 0 (success)
  */
 int main(void)
 {
