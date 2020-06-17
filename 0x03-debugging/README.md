@@ -1,0 +1,1 @@
+This project allows me to learn to debug objectively and personally.
