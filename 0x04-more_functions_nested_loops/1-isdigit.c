@@ -1,0 +1,13 @@
+#include "holberton.h"
+/**
+ *_isdigit - this function checks for a digit
+ *@c: input
+ *Return: 1 if c is a digit or 0 otherwise.
+ */
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (0);
+
+	return (1);
+}
