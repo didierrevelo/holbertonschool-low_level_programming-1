@@ -1,0 +1,1 @@
+this proyect learn more about pointers and arrays
