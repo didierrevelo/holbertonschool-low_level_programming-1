@@ -14,7 +14,7 @@ int sqrtrecursion(int b, int inc)
 	else if ((inc * inc) != b && (inc * inc) < b)
 		return (sqrtrecursion(b, inc + 1));
 	else
-	return (inc);
+		return (inc);
 }
 /**
  *_sqrt_recursion - this function return natural square root of a number.
