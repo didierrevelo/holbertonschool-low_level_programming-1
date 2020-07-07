@@ -16,11 +16,11 @@ int _isdigit(int c)
  *main - program that adds positive numbers.
  *@argc: number of commant line
  *@argv: command line input
- *Return: If no number is passed to the program, print 0, followed by a new line
- * If one of the number contains symbols that are not digits, print Error,
- * followed by a new line, and return 1
+ *Return: If no number is passed to the program, print 0, followed by
+ * a new line if one of the number contains symbols that are not digits,
+ * print Error, followed by a new line, and return 1
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b = 0;
 
