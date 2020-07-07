@@ -1,18 +1,5 @@
 #include "holberton.h"
 /**
- *_isdigit - this function checks for a digit
- *@c: input
- *Return: 1 if c is a digit or 0 otherwise.
- */
-int _isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-
-	return (0);
-}
-
-/**
  *main - program that adds positive numbers.
  *@argc: number of commant line
  *@argv: command line input
@@ -23,21 +10,24 @@ int _isdigit(int c)
 int main(int argc, char *argv[])
 {
 	int a, b = 0;
+	char *q;
+	int e;
 
-	if (argc < 1)
+	if (argc <= 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 	for (a = 1; a < argc; a++)
 	{
-		if (_isdigit(*argv[a]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-			b += atoi(argv[a]);
+		q = argv[a];
+		for (e = 0; q[e] != '\0'; e++)
+			if (q[b] > '9' || q[e] < '0')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		b += atoi(argv[a]);
 	}
 	printf("%d\n", b);
 	return (0);
