@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		q = argv[a];
 		for (e = 0; q[e] != '\0'; e++)
-			if (q[b] > '9' || q[e] < '0')
+			if (q[e] > '9' || q[e] < '0')
 			{
 				printf("Error\n");
 				return (1);
