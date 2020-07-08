@@ -1,4 +1,10 @@
 #include "holberton.h"
+/**
+ **_strdup - returns a pointer to a newly allocated space in memory,
+ * which contains a copy of the string given as a parameter.
+ *@str: pointer.
+ *Return: pointer
+ */
 char *_strdup(char *str)
 {
 	int i, s = 0;
