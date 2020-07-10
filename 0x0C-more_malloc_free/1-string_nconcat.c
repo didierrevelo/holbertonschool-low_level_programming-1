@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
- **_strdup - returns a pointer to a newly allocated space in memory,
- * which contains a copy of the string given as a parameter.
- *@str: pointer.
- *Return: pointer
+ **str_concat - this function concatenates two strings.
+ *@s1: pointer
+ *@s2: pointer
+ *@n: number of bytes.
+ *Return: two strings concatenates.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a, *b;
-	int i, first, second;
-	unsigned int s;
+	unsigned int i, first, second, s;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -25,14 +25,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 
 	}
-	a = (char *)malloc(sizeof(char) * (first + n + 1));
+	if (n < second)
+		second -= (second - n);
+
+	a = (char *)malloc(sizeof(char) * (first + second + 1));
 	b = a;
 	if (a == NULL)
+	{
+		free(a);
 		return (NULL);
+	}
 	for (i = 0; i < first; i++)
 		a[i] = s1[i];
-	for (s = 0; s <= n; s++, i++)
+	for (s = 0; s <= second; s++, i++)
 		a[i] = s2[s];
+	a[i] = '\0';
 
 	return (b);
 	free(b);
