@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	}
 	if (n < second)
-		second -= (second - n);
+		second = second - (second - n);
 
 	a = malloc(sizeof(char) * (first + second + 1));
 	b = a;
@@ -37,10 +37,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (i = 0; i < first; i++)
 		a[i] = s1[i];
-	for (s = 0; s <= second; s++, i++)
+	for (s = 0; s < second; s++, i++)
 		a[i] = s2[s];
 	a[i] = '\0';
 
 	return (b);
-	free(b);
 }
