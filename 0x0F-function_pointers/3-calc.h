@@ -1,12 +1,9 @@
-#ifndef CALC_H
-#define CALC_H
-#include <stdio.h>
-#include <stdlib.h>
-
+#ifndef HEADER_H
+#define HEADER_H
 /**
  * struct op - Struct op
  *
- * @op: The operator
+ * @op: The operator data structure
  * @f: The function associated
  */
 typedef struct op
@@ -21,6 +18,5 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
-int main(int argc, char **argv);
 
-#endif /* CALC_H_ */
+#endif
