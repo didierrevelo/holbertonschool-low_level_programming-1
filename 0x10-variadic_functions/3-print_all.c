@@ -49,7 +49,7 @@ void print_s(va_list home)
 void print_all(const char * const format, ...)
 {
 	int a = 0, b;
-	char *ptr = " ";
+	char *ptr = "";
 
 	va_list home;
 	hola_t  print[] = {
