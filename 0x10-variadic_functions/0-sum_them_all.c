@@ -12,15 +12,13 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(h, n);
 
-	if (n == 0)
-		return (0);
-
+	if (n != 0)
 	boo = 0;
-	for (move = 0; move < n; move++)
 	{
+		for (move = 0; move < n; move++)
 		boo += va_arg(h, int);
+		va_end(h);
+		return (boo);
 	}
-	va_end(h);
-	return (boo);
-
+	return (0);
 }
