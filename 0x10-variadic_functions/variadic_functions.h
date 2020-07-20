@@ -5,6 +5,13 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+ * struct hola - Struct print
+ *
+ * @rock: The operator
+ * @far: The function associated
+ */
+
 typedef struct hola
 {
 	char *rock;
