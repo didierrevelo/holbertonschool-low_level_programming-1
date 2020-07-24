@@ -15,15 +15,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		new->str = strdup(str);
 		if (!new->str || !str)
-        {
-            free(new)
-            return (NULL);
-        }
-
+		{
+			free(new);
+			return (NULL);
+		}
 		while (new->str[c])
-				c++;
-		
-        new->next = NULL;
+			c++;
+		new->next = NULL;
 		new->len = c;
 		if (!*head)
 		{
