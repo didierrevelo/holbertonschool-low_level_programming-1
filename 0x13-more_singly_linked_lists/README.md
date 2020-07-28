@@ -4,8 +4,8 @@ more_singly_linked_lists
 
 Learning Objectives
 
-General
-How to use linked lists
+General.
+How to use linked lists.
 Start to look for the right source of information without too much help
 
 0. Print list\n
@@ -38,5 +38,5 @@ Write a function that returns the sum of all the data (n) of a listint_t linked 
 9. Insert\n
 Write a function that inserts a new node at a given position.
 
-10. Delete at index\n
+10. Delete at index"\n"
 Write a function that deletes the node at index index of a listint_t linked list.
