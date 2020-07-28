@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list_len - this function return the numbers of elements of a list.
+ * listint_len - this function return the numbers of elements of a list.
  * @h: it´s the values to prints
  * Return: the number of nodes.
  */
