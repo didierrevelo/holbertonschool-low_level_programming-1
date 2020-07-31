@@ -1,5 +1,9 @@
 #include "holberton.h"
 /**
+ * binary_to_uint - this function converts a binary
+ * number to an unsigned int.
+ * @b: char of string binary
+ * Return: number 
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -21,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		result = result << 1;
 
 		if (b[runner2] == 49)
-		result = result + 1; 
+		result = result + 1;
 	}
 	return (result);
 
