@@ -7,11 +7,11 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
-	return (0);
-
 	int runner1 = 0, runner2;
 	unsigned int result;
+	
+	if (b == NULL)
+	return (0);
 
 	while (b[runner1] != '\0')
 	{
